@@ -1,0 +1,24 @@
+{
+  "name": "ce_lille_2k20",
+  "version": "1.0.0",
+  "description": "* Node.js\r * npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunlek/CE-Lille-2k19.git"
+  },
+  "author": "Fabien Aubret <fabien.aubret@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunlek/CE-Lille-2k19/issues"
+  },
+  "homepage": "https://github.com/Gunlek/CE-Lille-2k19#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "twig": "^1.13.3"
+  }
+}
