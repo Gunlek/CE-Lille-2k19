@@ -7,4 +7,4 @@
 
 ## Installation
 * Exécuter la commande `npm install`
-* Lancer l'application avec "`node .`" ou "`pm2 start .`" si vous utilisez pm2
+* Lancer l'application avec `node .` ou `pm2 start .` si vous utilisez pm2
