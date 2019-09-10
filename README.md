@@ -1,5 +1,5 @@
 # Site du CE Lille 2019
-#### Développé par Fabien AUBRET <<fabien.aubret@gadzarts.org>> pour la team CE
+#### Développé par Fabien AUBRET <<fabien.aubret@gadz.org>> pour la team CE
 
 ## Pré-requis
 * Node.js
