@@ -15,3 +15,133 @@ h1, h2, h3, h4, h5, h6
     margin: 0 0;
     padding: 0 0;
 }
+
+p
+{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.font-agency
+{
+    font-family: 'Agency FB', arial;
+}
+
+.page
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu
+{
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    color: #eee;
+}
+
+.menu .menu-toggler
+{
+    padding: 20px;
+}
+
+.menu ul
+{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /*background-color: #0f0;*/
+}
+
+.menu ul li
+{
+    list-style: none;
+    margin: 0 0;
+    padding: 0 20;
+}
+
+.menu a
+{
+    color: #eee;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+.menu a:hover
+{
+    color: #fff;
+    transition: 0.2s color;
+}
+
+.main-image
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 75%;
+}
+
+.main-image .image-holder
+{
+    position: relative;
+}
+
+.main-image img
+{
+    display: block;
+    width: 75vw;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.text-block
+{
+    position: absolute;
+    right: 0;
+    top: 5vh;
+    height: 75vh;
+    width: 75vw;
+}
+
+
+.main-image h1
+{
+    display: block;
+    color: #eee;
+    font-size: 60px;
+    top: 50%;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    z-index: 1;
+}
+
+.event-desc
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 75vw;
+    height: 25vh;
+    background-color: #eee;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
