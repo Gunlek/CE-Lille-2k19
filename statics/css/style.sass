@@ -1,0 +1,264 @@
+/* ###############################
+   ##   Variables definitions   ##
+   ###############################
+
+$top-nav-height: 80px
+$top-nav-font-size: 40px
+$top-nav-background: #002060
+$top-nav-foreground:  #86ECF0
+
+$general-foreground-color: $top-nav-background
+
+$paragraph-size: 30px
+    
+html
+    margin: 0 0
+    padding: 0 0
+    height: 100%
+
+body
+    position: relative
+    margin: 0 0
+    padding: 0 0
+    min-height: 100%
+
+h1, h2, h3, h4, h5
+    margin: 0 0
+    padding: 0 0
+    color: $general-foreground-color
+
+a.active, a.active li
+    color: #eee !important
+
+.size-40
+    font-size: 40px
+
+.size-50
+    font-size: 50px
+
+.size-60
+    font-size: 60px
+
+.size-70
+    font-size: 70px
+
+.size-80
+    font-size: 80px
+
+.size-90
+    font-size: 90px
+
+.top-nav
+    height: $top-nav-height
+    background-color: $top-nav-background
+    color: $top-nav-foreground
+    width: 100%
+    top: 0
+    left: 0
+    position: absolute
+    z-index: 2
+
+    .nav-bot-border
+        width: 90%
+        position: absolute
+        bottom: 0
+        right: 0
+        margin: 0 0
+        padding: 0 0
+        border: 2px solid $top-nav-foreground
+
+    .brand-part
+        position: absolute
+        top: 0
+        left: 0
+        padding-left: 20px
+
+        img
+            height: $top-nav-height
+
+    .right-part
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+
+        ul
+            height: 100%
+            margin: 0 0
+            padding: 0 0
+            list-style: none
+
+            a
+                color: $top-nav-foreground
+                text-decoration: none
+                line-height: $top-nav-height
+                font-size: $top-nav-font-size
+
+            li:before
+                content: ""
+
+            li
+                color: $top-nav-foreground
+                float: left
+                padding: 0 30px
+
+.first-section
+    .section-content
+        z-index: 3
+        margin-top: $top-nav-height
+        display: inline-block
+        width: 100%
+
+.dark-bg
+    *
+        color: $top-nav-foreground !important
+    
+    hr
+        border: 2px solid $top-nav-foreground !important
+
+.section
+    z-index: 1
+    position: relative
+    min-height: 100vh
+    background-size: cover
+
+    .centered-content
+        position: absolute
+        top: 0
+        left: 0
+        width: 99%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0 0.5%
+
+        p
+            width: 100%
+            padding: 20px
+            color: $general-foreground-color
+            font-size: $paragraph-size
+            border-radius: 10px
+        
+        .light-shadow
+            background-color: rgba(255, 255, 255, 0.7)
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 1)
+        
+        .dark-shadow
+            background-color: rgba(0, 0, 0, 0.3)
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8)
+
+.section-header
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    hr
+        flex: auto
+        border: 2px solid $general-foreground-color
+        width: auto
+        margin: 0 20px
+
+    h1
+        padding: 0 20px
+
+
+.row
+    width: 100%
+    display: flex
+    flex-direction: row
+
+    .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+        flex: auto
+        padding: 20px 40px
+    
+    .col-1
+        width: 8.333333333333333%
+    
+    .col-2
+        width: 16.66666666666667%
+    
+    .col-3
+        width: 25%
+    
+    .col-4
+        width: 33.33333333333333%
+    
+    .col-5
+        width: 41.66666666666667%
+    
+    .col-6
+        width: 50%
+
+p
+    color: $general-foreground-color
+    font-size: 30px
+
+ul
+    list-style: none
+
+    li:before
+        content: "- "
+
+    li
+        color: $general-foreground-color
+        font-size: 30px
+    
+.filter
+    z-index: 2
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.white-70
+    background-color: rgba(255, 255, 255, 0.7)
+
+.white-50
+    background-color: rgba(255, 255, 255, 0.5)
+
+.white-30
+    background-color: rgba(255, 255, 255, 0.3)
+
+.white-20
+    background-color: rgba(255, 255, 255, 0.2)
+
+#section1
+    background-image: url('/img/compressor/background_1-compressor.jpg')
+
+#section2
+    background-image: url('/img/compressor/background_2-compressor.jpg')
+
+#section3
+    background-image: url('/img/compressor/background_3-compressor.jpg')
+
+#section4
+    background-image: url('/img/compressor/background_4-compressor.jpg')
+
+#section5
+    background-image: url('/img/compressor/background_5-compressor.jpg')
+
+#section6
+    background-image: url('/img/compressor/background_6-compressor.jpg')
+
+#section7
+    background-image: url('/img/compressor/background_7-compressor.jpg')
+
+#section8
+    background-image: url('/img/compressor/background_8-compressor.jpg')
+
+#section9
+    background-image: url('/img/compressor/background_9-compressor.jpg')
+
+#section10
+    background-image: url('/img/compressor/background_10-compressor.jpg')
+
+#section11
+    background-image: url('/img/compressor/background_11_12-compressor.jpg')
+
+#section12
+    background-image: url('/img/compressor/background_11_12-compressor.jpg')
+
+#section13
+    background-image: url('/img/background_13.png')

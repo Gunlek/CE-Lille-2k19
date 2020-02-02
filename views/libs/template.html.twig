@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css" />
+        <meta charset="utf-8" />
+        <link rel="icon" href="/img/logo_CE.ico" />
+        {% block title %}<title>CE Birse 2020</title>{% endblock %}
+        {% block styles %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <header>
+            <nav class="top-nav">
+                <div class="brand-part">
+                    <a href="/"><img src="/img/logo_CE.png" /></a>
+                </div>
+
+                <div class="right-part">
+                    <ul>
+                        {% block navLinks %}
+                            <a href="/le-ce/"><li>Le CE</li></a>
+                            <a href="/ateliers/"><li>Ateliers</li></a>
+                            <a href="/billetterie/"><li>Billeterie</li></a>
+                            <a href="/organisation/"><li>Organisation</li></a>
+                            <a href="/contact/"><li>Contact</li></a>
+                        {% endblock %}
+                    </ul>
+                </div>
+
+                <hr class="nav-bot-border"/>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </body>
+    {% block scripts %}
+    {% endblock %}
+</html>
