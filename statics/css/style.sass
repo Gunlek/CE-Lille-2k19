@@ -3,14 +3,24 @@
    ###############################
 
 $top-nav-height: 80px
-$top-nav-font-size: 40px
+$top-nav-font-size: 50px
 $top-nav-background: #002060
 $top-nav-foreground:  #86ECF0
 
 $general-foreground-color: $top-nav-background
 
 $paragraph-size: 30px
-    
+
+@font-face
+    font-family: "EstaSmallCaps"
+    src: url("/fonts/bodoni_small_caps/bodoni_small_caps.eot")
+    src: url("/fonts/bodoni_small_caps/bodoni_small_caps.eot?#iefix") format("embedded-opentype"), url("/fonts/bodoni_small_caps/bodoni_small_caps.woff2") format("woff2"), url("/fonts/bodoni_small_caps/bodoni_small_caps.woff") format("woff"), url("/fonts/bodoni_small_caps/bodoni_small_caps.ttf") format("truetype"), url("/fonts/bodoni_small_caps/bodoni_small_caps.svg#EstaSmallCaps") format("svg")
+
+@font-face
+    font-family: "Bodoni"
+    src: url("/fonts/bodoni_regular/bodoni.eot")
+    src: url("/fonts/bodoni_regular/bodoni.eot?#iefix") format("embedded-opentype"), url("/fonts/bodoni_regular/bodoni.woff2") format("woff2"), url("/fonts/bodoni_regular/bodoni.woff") format("woff"), url("/fonts/bodoni_regular/bodoni.ttf") format("truetype"), url("/fonts/bodoni_regular/bodoni.svg#Bodoni") format("svg")
+
 html
     margin: 0 0
     padding: 0 0
@@ -26,6 +36,7 @@ h1, h2, h3, h4, h5
     margin: 0 0
     padding: 0 0
     color: $general-foreground-color
+    font-family: EstaSmallCaps
 
 a.active, a.active li
     color: #eee !important
@@ -92,7 +103,7 @@ a.active, a.active li
                 color: $top-nav-foreground
                 text-decoration: none
                 line-height: $top-nav-height
-                font-size: $top-nav-font-size
+                font-size: $top-nav-font-size !important
 
             li:before
                 content: ""
@@ -101,6 +112,7 @@ a.active, a.active li
                 color: $top-nav-foreground
                 float: left
                 padding: 0 30px
+                font-family: bodoni
 
 .first-section
     .section-content
@@ -202,7 +214,6 @@ ul
 
     li
         color: $general-foreground-color
-        font-size: 30px
     
 .filter
     z-index: 2
