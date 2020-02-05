@@ -21,6 +21,15 @@ $paragraph-size: 30px
     src: url("/fonts/bodoni_regular/bodoni.eot")
     src: url("/fonts/bodoni_regular/bodoni.eot?#iefix") format("embedded-opentype"), url("/fonts/bodoni_regular/bodoni.woff2") format("woff2"), url("/fonts/bodoni_regular/bodoni.woff") format("woff"), url("/fonts/bodoni_regular/bodoni.ttf") format("truetype"), url("/fonts/bodoni_regular/bodoni.svg#Bodoni") format("svg")
 
+@font-face
+    font-family: "Trebuchet"
+    src: url("/fonts/trebuchet/Trebuchet_MS.ttf")
+
+// $title-fonts: Trebuchet
+// $nav-fonts: Trebuchet
+$nav-fonts: Bodoni
+$title-fonts: EstaSmallCaps
+
 html
     margin: 0 0
     padding: 0 0
@@ -36,7 +45,7 @@ h1, h2, h3, h4, h5
     margin: 0 0
     padding: 0 0
     color: $general-foreground-color
-    font-family: EstaSmallCaps
+    font-family: $title-fonts
 
 a.active, a.active li
     color: #eee !important
@@ -112,7 +121,7 @@ a.active, a.active li
                 color: $top-nav-foreground
                 float: left
                 padding: 0 30px
-                font-family: bodoni
+                font-family: $nav-fonts
 
 .first-section
     .section-content

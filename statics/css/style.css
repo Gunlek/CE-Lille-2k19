@@ -11,6 +11,10 @@
   src: url("/fonts/bodoni_regular/bodoni.eot");
   src: url("/fonts/bodoni_regular/bodoni.eot?#iefix") format("embedded-opentype"), url("/fonts/bodoni_regular/bodoni.woff2") format("woff2"), url("/fonts/bodoni_regular/bodoni.woff") format("woff"), url("/fonts/bodoni_regular/bodoni.ttf") format("truetype"), url("/fonts/bodoni_regular/bodoni.svg#Bodoni") format("svg");
 }
+@font-face {
+  font-family: "Trebuchet";
+  src: url("/fonts/trebuchet/Trebuchet_MS.ttf");
+}
 html {
   margin: 0 0;
   padding: 0 0;
@@ -112,7 +116,7 @@ a.active, a.active li {
   color: #86ECF0;
   float: left;
   padding: 0 30px;
-  font-family: bodoni;
+  font-family: Bodoni;
 }
 
 .first-section .section-content {
@@ -297,3 +301,5 @@ ul li {
 #section13 {
   background-image: url("/img/background_13.png");
 }
+
+/*# sourceMappingURL=style.css.map */
