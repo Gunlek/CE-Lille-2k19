@@ -57,7 +57,16 @@
             $(document).ready(function(){
                 $('#mobileNavActivator').click(function(e){
                     e.preventDefault();
+                    e.stopPropagation();
                     $('.mobile-menu').slideToggle();
+                });
+
+                $('.mobile-menu').click(function(e){
+                    e.stopPropagation();
+                });
+
+                $('body').click(function(e){
+                    $('.mobile-menu').slideUp();
                 });
             });
         </script>
