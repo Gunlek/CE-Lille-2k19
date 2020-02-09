@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/all.css" />
         <meta charset="utf-8" />
         <link rel="icon" href="/img/logo_CE.ico" />
         {% block title %}<title>CE Birse 2020</title>{% endblock %}
@@ -17,6 +18,19 @@
                 </div>
 
                 <div class="right-part">
+                    <i id="mobileNavActivator" class="mobile-only fas fa-bars"></i>
+                    <ul>
+                        {% block navLinks %}
+                            <a href="/le-ce/"><li>Le CE</li></a>
+                            <a href="/ateliers/"><li>Ateliers</li></a>
+                            <a href="/billetterie/"><li>Billetterie</li></a>
+                            <a href="/organisation/"><li>Organisation</li></a>
+                            <a href="/contact/"><li>Contact</li></a>
+                        {% endblock %}
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
                     <ul>
                         {% block navLinks %}
                             <a href="/le-ce/"><li>Le CE</li></a>
@@ -38,5 +52,14 @@
         </main>
     </body>
     {% block scripts %}
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#mobileNavActivator').click(function(e){
+                    e.preventDefault();
+                    $('.mobile-menu').slideToggle();
+                });
+            });
+        </script>
     {% endblock %}
 </html>

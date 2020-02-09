@@ -96,6 +96,55 @@ a.active, a.active li {
 .top-nav .brand-part img {
   height: 80px;
 }
+.top-nav .mobile-only {
+  display: none;
+}
+.top-nav #mobileNavActivator {
+  font-size: 3em;
+  line-height: 80px;
+  color: #86ECF0;
+  margin: 0 10px;
+}
+.top-nav #mobileNavActivator:hover {
+  cursor: pointer;
+}
+.top-nav .mobile-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  background-color: #002060;
+}
+.top-nav .mobile-menu ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+.top-nav .mobile-menu ul a {
+  text-decoration: none;
+}
+.top-nav .mobile-menu ul a li {
+  color: #86ECF0;
+  font-size: 1.5em;
+  width: 100%;
+  min-height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #86ECF0;
+}
+.top-nav .mobile-menu ul a li:before {
+  content: "";
+}
+@media screen and (max-width: 640px) {
+  .top-nav .right-part ul {
+    display: none;
+  }
+  .top-nav .mobile-only {
+    display: block;
+  }
+}
 .top-nav .right-part {
   position: absolute;
   top: 0;
