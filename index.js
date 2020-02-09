@@ -1,10 +1,13 @@
 var express = require('express');
 let session = require('express-session');
+require('dotenv').config();
 
 var app = express();
 
 app.use(session({
-    secret: "website-ce"
+    secret: "website-ce",
+    resave: false,
+    saveUninitialized: false,
 }));
 
 app.use(express.static('statics'));
@@ -33,4 +36,4 @@ app.get('/contact/', (req, res) => {
     res.render('contact.html.twig');
 });
 
-app.listen(8080);
+app.listen(process.env.APP_PORT);
