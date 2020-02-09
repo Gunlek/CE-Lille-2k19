@@ -137,7 +137,7 @@ a.active, a.active li {
 .top-nav .mobile-menu ul a li:before {
   content: "";
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1250px) {
   .top-nav .right-part ul {
     display: none;
   }
