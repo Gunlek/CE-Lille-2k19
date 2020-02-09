@@ -40,27 +40,32 @@ a.active, a.active li {
 }
 
 .size-40 {
-  font-size: 40px;
+  font-size: 1.5em;
 }
 
 .size-50 {
-  font-size: 50px;
+  font-size: 2em;
 }
 
 .size-60 {
-  font-size: 60px;
+  font-size: 2.5em;
 }
 
 .size-70 {
-  font-size: 70px;
+  font-size: 3em;
 }
 
 .size-80 {
-  font-size: 80px;
+  font-size: 3.5em;
 }
 
 .size-90 {
-  font-size: 90px;
+  font-size: 4em;
+}
+
+#homeYT {
+  height: 50vh;
+  width: 88.8888888889vh;
 }
 
 .top-nav {
@@ -154,7 +159,7 @@ a.active, a.active li {
   width: 100%;
   padding: 20px;
   color: #002060;
-  font-size: 30px;
+  font-size: 1.5em;
   border-radius: 10px;
 }
 .section .centered-content .light-shadow {
@@ -212,7 +217,7 @@ a.active, a.active li {
 
 p {
   color: #002060;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 ul {
@@ -301,5 +306,3 @@ ul li {
 #section13 {
   background-image: url("/img/background_13.png");
 }
-
-/*# sourceMappingURL=style.css.map */
