@@ -64,8 +64,8 @@ a.active, a.active li {
 }
 
 #homeYT {
-  height: 50vh;
-  width: 88.8888888889vh;
+  height: 40vh !important;
+  width: 71.1111111111vh !important;
 }
 
 .top-nav {
