@@ -36,7 +36,16 @@
                     </div>
 
                     <div class="col-6">
-                        
+                        <div id="tbk_map"></div>
+                        <script>
+                            function initMap() {
+                            var campus_lille = {lat: 50.628564, lng: 3.071217};
+                            var map = new google.maps.Map(
+                                document.getElementById('tbk_map'), {zoom: 17, center: campus_lille});
+                            var marker = new google.maps.Marker({position: campus_lille, map: map});
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0Ju3AlWmZQu9O6p_ijSMbt-sVuy6Teso&callback=initMap"></script>
                     </div>
                 </div>
             </div>

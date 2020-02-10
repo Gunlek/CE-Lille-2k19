@@ -21,10 +21,28 @@
                     <i id="mobileNavActivator" class="mobile-only fas fa-bars"></i>
                     <ul>
                         {% block navLinks %}
-                            <a href="/le-ce/"><li>Le CE</li></a>
+                            <a href="/le-ce/">
+                                <li>
+                                    Le CE
+
+                                    <ul>
+                                        <li>Test 1</li>
+                                        <li>Test 2</li>
+                                    </ul>
+                                </li>
+                            </a>
                             <a href="/ateliers/"><li>Ateliers</li></a>
                             <a href="/billetterie/"><li>Billetterie</li></a>
-                            <a href="/organisation/"><li>Organisation</li></a>
+                            <a href="/organisation/">
+                                <li>
+                                    Organisation
+
+                                    <ul>
+                                        <li>Test 1</li>
+                                        <li>Test 2</li>
+                                    </ul>
+                                </li>
+                            </a>
                             <a href="/contact/"><li>Contact</li></a>
                         {% endblock %}
                     </ul>
@@ -41,8 +59,6 @@
                         {% endblock %}
                     </ul>
                 </div>
-
-                <hr class="nav-bot-border"/>
             </nav>
         </header>
 
