@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a.active, a.active li {
-  color: #eee !important;
+  background-color: #021a57;
 }
 
 .size-40 {
@@ -138,6 +138,10 @@ a.active, a.active li {
   line-height: 50px;
   border-bottom: 1px solid #60a3bc;
 }
+.top-nav .mobile-menu ul a li:hover {
+  background-color: #021a57;
+  transition: 0.2s background-color;
+}
 .top-nav .mobile-menu ul a li:before {
   content: "";
 }
@@ -170,13 +174,41 @@ a.active, a.active li {
 .top-nav .right-part ul li:before {
   content: "";
 }
-.top-nav .right-part ul li {
+.top-nav .right-part ul > a > li {
   color: #60a3bc;
   float: left;
-  padding: 0 15px;
   font-family: sans-serif;
+  padding: 0 15px;
+  position: relative;
 }
-.top-nav .right-part ul li:hover {
+.top-nav .right-part ul > a > li:hover {
+  background-color: #021a57;
+  transition: 0.2s background-color;
+}
+.top-nav .right-part ul > a > li:hover > ul {
+  display: block;
+  height: 100%;
+}
+.top-nav .right-part ul > a > li ul {
+  display: none;
+  height: 0px;
+  list-style: none;
+  background-color: #0c2461;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+}
+.top-nav .right-part ul > a > li ul li {
+  float: top;
+  background-color: #0c2461;
+  color: #60a3bc;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 0.8em;
+  height: 40px;
+  line-height: 40px;
+}
+.top-nav .right-part ul > a > li ul li:hover {
   background-color: #021a57;
   transition: 0.2s background-color;
 }
@@ -251,6 +283,7 @@ a.active, a.active li {
   margin: 0 20px;
 }
 .section-header h1 {
+  color: #0c2461;
   padding: 0 20px;
 }
 

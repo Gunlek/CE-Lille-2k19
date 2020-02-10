@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5
     font-weight: normal
 
 a.active, a.active li
-    color: #eee !important
+    background-color: rgb(2, 26, 87)
 
 .size-40
     font-size: 1.5em
@@ -144,6 +144,10 @@ a.active, a.active li
                     line-height: 50px
                     border-bottom: 1px solid $top-nav-foreground
 
+                    &:hover
+                        background-color: rgb(2, 26, 87)
+                        transition: 0.2s background-color
+
                     &:before
                         content: ''
 
@@ -175,15 +179,43 @@ a.active, a.active li
             li:before
                 content: ""
 
-            li
+            & > a > li
                 color: $top-nav-foreground
                 float: left
-                padding: 0 15px
                 font-family: sans-serif
+                padding: 0 15px
+                position: relative
 
                 &:hover
                     background-color: rgb(2, 26, 87)
                     transition: 0.2s background-color
+
+                &:hover > ul
+                    display: block
+                    height: 100%
+
+                ul
+                    display: none
+                    height: 0px
+                    list-style: none
+                    background-color: $top-nav-background
+                    width: 100%
+                    position: absolute
+                    left: 0px
+
+                    li
+                        float: top
+                        background-color: $top-nav-background
+                        color: $top-nav-foreground
+                        width: 100%
+                        padding: 0 15px
+                        font-size: 0.8em
+                        height: 40px
+                        line-height: 40px
+
+                        &:hover
+                            background-color: rgb(2, 26, 87)
+                            transition: 0.2s background-color
 
 .section-content-bottom
     background-color: rgba(0, 0, 0, 0.3)
@@ -245,6 +277,7 @@ a.active, a.active li
     flex-direction: row
     align-items: center
     justify-content: center
+
     hr
         flex: auto
         border: 2px solid $general-foreground-color
@@ -252,6 +285,7 @@ a.active, a.active li
         margin: 0 20px
 
     h1
+        color: $general-foreground-color
         padding: 0 20px
 
 
