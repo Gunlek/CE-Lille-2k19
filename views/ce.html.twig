@@ -3,15 +3,36 @@
 {% block title %}<title>CE &bull; CE Birse 2020</title>{% endblock %}
 
 {% block navLinks %}
-    <a href="/le-ce/" class="active"><li>Le CE</li></a>
+    <a href="/le-ce/" class="active">
+        <li>
+            Le CE
+            <ul>
+                <a href="/le-ce/#ce"><li>Le CE</li></a>
+                <a href="/le-ce/#ue"><li>L'UE</li></a>
+                <a href="/le-ce/#lille"><li>Lille</li></a>
+                <a href="/le-ce/#soiree"><li>La soirée</li></a>
+            </ul>
+        </li>
+    </a>
     <a href="/ateliers/"><li>Ateliers</li></a>
     <a href="/billetterie/"><li>Billetterie</li></a>
-    <a href="/organisation/"><li>Organisation</li></a>
+    <a href="/organisation/">
+        <li>
+            Organisation
+            <ul>
+                <a href="/organisation/#transports"><li>Transports</li></a>
+                <a href="/organisation/#logement"><li>Logement</li></a>
+                <a href="/organisation/#finss"><li>Finss</li></a>
+                <a href="/organisation/#planning"><li>Planning</li></a>
+            </ul>
+        </li>
+    </a>
     <a href="/contact/"><li>Contact</li></a>
 {% endblock %}
 
 {% block content %}
     <div class="section first-section" id="section2">
+        <span id="ce"></span>
         <div class="white-30 filter">
             <div class="section-content">
                 <div class="section-header">
@@ -36,6 +57,7 @@
     </div>
 
     <div class="section" id="section3">
+        <span id="ue"></span>
         <div class="white-30 filter">
             <div class="section-content">
                 <div class="section-header">
@@ -59,6 +81,7 @@
     </div>
 
     <div class="section" id="section4">
+        <span id="lille"></span>
         <div class="white-30 filter">
             <div class="section-content">
                 <div class="section-header">
@@ -82,6 +105,7 @@
     </div>
 
     <div class="section dark-bg" id="section5">
+        <span id="soiree"></span>
         <div class="white-30 filter">
             <div class="section-content">
                 <div class="section-header">

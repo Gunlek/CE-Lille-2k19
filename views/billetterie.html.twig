@@ -3,10 +3,30 @@
 {% block title %}<title>Billetterie &bull; CE Birse 2020</title>{% endblock %}
 
 {% block navLinks %}
-    <a href="/le-ce/"><li>Le CE</li></a>
+    <a href="/le-ce/">
+        <li>
+            Le CE
+            <ul>
+                <a href="/le-ce/#ce"><li>Le CE</li></a>
+                <a href="/le-ce/#ue"><li>L'UE</li></a>
+                <a href="/le-ce/#lille"><li>Lille</li></a>
+                <a href="/le-ce/#soiree"><li>La soirée</li></a>
+            </ul>
+        </li>
+    </a>
     <a href="/ateliers/"><li>Ateliers</li></a>
     <a href="/billetterie/" class="active"><li>Billetterie</li></a>
-    <a href="/organisation/"><li>Organisation</li></a>
+    <a href="/organisation/">
+        <li>
+            Organisation
+            <ul>
+                <a href="/organisation/#transports"><li>Transports</li></a>
+                <a href="/organisation/#logement"><li>Logement</li></a>
+                <a href="/organisation/#finss"><li>Finss</li></a>
+                <a href="/organisation/#planning"><li>Planning</li></a>
+            </ul>
+        </li>
+    </a>
     <a href="/contact/"><li>Contact</li></a>
 {% endblock %}
 
@@ -19,6 +39,12 @@
                     <h1 class="size-90">Billetterie</h1>
                     <hr>
                 </div>
+            </div>
+
+            <div class="centered-content">
+                <p class="light-shadow" style="text-align: center">
+                    <a class="btn btn-green" href="https://collecte.io/votre-collecte-303295/fr">Billetterie</a>
+                </p>
             </div>
         </div>
     </div>
