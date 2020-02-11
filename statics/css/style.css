@@ -172,40 +172,44 @@ a.active, a.active li {
   font-size: 2em !important;
 }
 .top-nav .right-part ul li:before {
-  content: "";
+  content: " ";
 }
-.top-nav .right-part ul > a > li {
+.top-nav .right-part ul li {
   color: #60a3bc;
   float: left;
   font-family: sans-serif;
   padding: 0 15px;
+  height: 60px;
   position: relative;
 }
-.top-nav .right-part ul > a > li:hover {
+.top-nav .right-part ul li:hover {
   background-color: #021a57;
   transition: 0.2s background-color;
 }
-.top-nav .right-part ul > a > li:hover > ul {
+.top-nav .right-part ul li:hover > ul {
   display: block;
   height: 100%;
 }
-.top-nav .right-part ul > a > li ul {
+.top-nav .right-part ul li ul {
   list-style: none;
   background-color: #0c2461;
   position: absolute;
-  /*li
-  *  float: top
-  *  background-color: $top-nav-background
-  *  color: $top-nav-foreground
-  *  width: 100%
-  *  padding: 0 15px
-  *  font-size: 0.8em
-  *  height: 40px
-  *  line-height: 40px
-  *
-  *  &:hover
-  *      background-color: rgb(2, 26, 87)
-  *      transition: 0.2s background-color */
+  left: 0;
+  display: none;
+}
+.top-nav .right-part ul li ul li {
+  float: top;
+  background-color: #0c2461;
+  color: #60a3bc;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 0.8em;
+  height: 40px;
+  line-height: 40px;
+}
+.top-nav .right-part ul li ul li:hover {
+  background-color: #021a57;
+  transition: 0.2s background-color;
 }
 
 .section-content-bottom {

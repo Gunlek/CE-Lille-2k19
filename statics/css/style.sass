@@ -177,13 +177,14 @@ a.active, a.active li
                 font-size: $top-nav-font-size !important
 
             li:before
-                content: ""
+                content: " "
 
-            & > a > li
+            li
                 color: $top-nav-foreground
                 float: left
                 font-family: sans-serif
                 padding: 0 15px
+                height: $top-nav-height
                 position: relative
 
                 &:hover
@@ -198,8 +199,10 @@ a.active, a.active li
                     list-style: none
                     background-color: $top-nav-background
                     position: absolute
+                    left: 0
+                    display: none
 
-                    /*li
+                    li
                         float: top
                         background-color: $top-nav-background
                         color: $top-nav-foreground
@@ -211,7 +214,7 @@ a.active, a.active li
 
                         &:hover
                             background-color: rgb(2, 26, 87)
-                            transition: 0.2s background-color */
+                            transition: 0.2s background-color
 
 .section-content-bottom
     background-color: rgba(0, 0, 0, 0.3)
