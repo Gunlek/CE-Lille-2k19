@@ -143,7 +143,7 @@ a.active, a.active li {
   transition: 0.2s background-color;
 }
 .top-nav .mobile-menu ul a li:before {
-  content: "";
+  content: " ";
 }
 @media screen and (max-width: 1250px) {
   .top-nav .right-part ul {
