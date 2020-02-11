@@ -193,14 +193,13 @@ a.active, a.active li
 
                 &:hover > ul
                     display: block
-                    height: 100%
 
                 ul
+                    display: none
                     list-style: none
                     background-color: $top-nav-background
                     position: absolute
                     left: 0
-                    display: none
 
                     li
                         float: top
@@ -224,6 +223,7 @@ a.active, a.active li
     left: 0
     color: #eee
     padding: 2% 10%
+    box-sizing: border-box
 
 .first-section
     .section-content
@@ -327,6 +327,30 @@ ul
 
     li
         color: $general-foreground-color
+
+.btn
+    border: 2px solid #bdc3c7
+    background-color: #ecf0f1
+    transition: 0.2s background-color
+    padding: 5px 15px
+    color: #333
+    text-decoration: none
+    font-family: sans-serif
+
+    &:hover
+        background-color: #bdc3c7
+        transition: 0.2s background-color
+
+.btn-xl
+    padding: 15px 30px
+
+.btn-green
+    background-color: #2ecc71
+    border: 2px solid #27ae60
+    color: #eee
+
+    &:hover
+        background-color: #27ae60
     
 .filter
     z-index: 2

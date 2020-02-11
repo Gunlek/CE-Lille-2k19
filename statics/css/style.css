@@ -188,14 +188,13 @@ a.active, a.active li {
 }
 .top-nav .right-part ul li:hover > ul {
   display: block;
-  height: 100%;
 }
 .top-nav .right-part ul li ul {
+  display: none;
   list-style: none;
   background-color: #0c2461;
   position: absolute;
   left: 0;
-  display: none;
 }
 .top-nav .right-part ul li ul li {
   float: top;
@@ -220,6 +219,7 @@ a.active, a.active li {
   left: 0;
   color: #eee;
   padding: 2% 10%;
+  box-sizing: border-box;
 }
 
 .first-section .section-content {
@@ -327,6 +327,33 @@ ul li:before {
 }
 ul li {
   color: #0c2461;
+}
+
+.btn {
+  border: 2px solid #bdc3c7;
+  background-color: #ecf0f1;
+  transition: 0.2s background-color;
+  padding: 5px 15px;
+  color: #333;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.btn:hover {
+  background-color: #bdc3c7;
+  transition: 0.2s background-color;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+  border: 2px solid #27ae60;
+  color: #eee;
+}
+.btn-green:hover {
+  background-color: #27ae60;
 }
 
 .filter {
