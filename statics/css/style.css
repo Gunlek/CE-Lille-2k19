@@ -190,27 +190,22 @@ a.active, a.active li {
   height: 100%;
 }
 .top-nav .right-part ul > a > li ul {
-  display: none;
-  height: 0px;
   list-style: none;
   background-color: #0c2461;
-  width: 100%;
   position: absolute;
-  left: 0px;
-}
-.top-nav .right-part ul > a > li ul li {
-  float: top;
-  background-color: #0c2461;
-  color: #60a3bc;
-  width: 100%;
-  padding: 0 15px;
-  font-size: 0.8em;
-  height: 40px;
-  line-height: 40px;
-}
-.top-nav .right-part ul > a > li ul li:hover {
-  background-color: #021a57;
-  transition: 0.2s background-color;
+  /*li
+  *  float: top
+  *  background-color: $top-nav-background
+  *  color: $top-nav-foreground
+  *  width: 100%
+  *  padding: 0 15px
+  *  font-size: 0.8em
+  *  height: 40px
+  *  line-height: 40px
+  *
+  *  &:hover
+  *      background-color: rgb(2, 26, 87)
+  *      transition: 0.2s background-color */
 }
 
 .section-content-bottom {

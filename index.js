@@ -29,7 +29,7 @@ app.get('/billetterie/', (req, res) => {
 });
 
 app.get('/organisation/', (req, res) => {
-    res.render('organisation.html.twig');
+    res.render('organisation.html.twig', {google_map_key: process.env.GOOGLE_MAP_KEY});
 });
 
 app.get('/contact/', (req, res) => {
