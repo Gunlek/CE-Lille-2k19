@@ -15,6 +15,10 @@
   font-family: "Trebuchet";
   src: url("/fonts/trebuchet/Trebuchet_MS.ttf");
 }
+@font-face {
+  font-family: "American Typewriter";
+  src: url("/fonts/American_Typewriter/American_Typewriter_Regular.ttf");
+}
 html {
   margin: 0 0;
   padding: 0 0;
@@ -31,7 +35,7 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0 0;
   padding: 0 0;
-  font-family: sans-serif;
+  font-family: American Typewriter;
   font-weight: normal;
 }
 
@@ -177,7 +181,7 @@ a.active, a.active li {
 .top-nav .right-part ul li {
   color: #60a3bc;
   float: left;
-  font-family: sans-serif;
+  font-family: American Typewriter;
   padding: 0 15px;
   height: 60px;
   position: relative;

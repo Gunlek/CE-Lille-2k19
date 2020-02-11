@@ -25,10 +25,14 @@ $paragraph-size: 1.5em
     font-family: "Trebuchet"
     src: url("/fonts/trebuchet/Trebuchet_MS.ttf")
 
+@font-face
+    font-family: "American Typewriter"
+    src: url("/fonts/American_Typewriter/American_Typewriter_Regular.ttf")
+
 // $title-fonts: Trebuchet
 // $nav-fonts: Trebuchet
-$nav-fonts: Bodoni
-$title-fonts: EstaSmallCaps
+$nav-fonts: American Typewriter
+$title-fonts: American Typewriter
 
 html
     margin: 0 0
@@ -45,8 +49,8 @@ h1, h2, h3, h4, h5
     margin: 0 0
     padding: 0 0
     // color: $general-foreground-color
-    // font-family: $title-fonts
-    font-family: sans-serif
+    font-family: $title-fonts
+    // font-family: sans-serif
     font-weight: normal
 
 a.active, a.active li
@@ -182,7 +186,7 @@ a.active, a.active li
             li
                 color: $top-nav-foreground
                 float: left
-                font-family: sans-serif
+                font-family: American Typewriter
                 padding: 0 15px
                 height: $top-nav-height
                 position: relative
