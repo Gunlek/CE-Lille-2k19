@@ -291,6 +291,15 @@ a.active, a.active li {
   padding: 0 20px;
 }
 
+#busSchedule {
+  font-size: 35px;
+  list-style: square;
+}
+
+#busSchedule li:before {
+  content: "";
+}
+
 .row {
   width: 100%;
   display: flex;
